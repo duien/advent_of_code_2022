@@ -2,6 +2,7 @@ class AdventProblem
   attr_accessor :input
 
   def initialize(input = data_file)
+    raise "class must set day!" if self.class.day.nil?
     @input = input
   end
 
